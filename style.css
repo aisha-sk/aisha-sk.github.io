@@ -380,6 +380,9 @@ h6 { font-size: 16px;}
 	font-size: 14px;
 }
 
+input [type="submit"]:hover{
+	background-color:#2ACA3E;
+}
 
 .input-field{
 	width: 100%;
@@ -400,7 +403,7 @@ h6 { font-size: 16px;}
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
-}
+} 
 
 
 @media screen and (max-width: 1200px){
@@ -438,4 +441,12 @@ h6 { font-size: 16px;}
 
 	}
 
+}
+
+nav {
+	color: var(--mainText);
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size:25px;
+	background-color: rgb(194, 104, 104);
 }

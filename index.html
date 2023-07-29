@@ -63,7 +63,9 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>A little about me</h3>
-							<p>I'm currently a first year CS Student at University of Alberta, Canada.</p>
+							<p>I'm currently a first year CS Student at University of Alberta, Canada.
+							</p>
+							<nav class="note">P.S. Scroll down to view my projects.</nav>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -79,6 +81,39 @@
 
 			<div class="post-wrapper">
 
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="files/grocery.png">
+						<div class="post-preview">
+							<h6 class="post-title">React Grocery List App</h6>
+							<p class="post-intro">A react-based App where you can use CRUD operations to manage your items!</p>
+							<a onclick="window.open ('https://github.com/aisha-sk/grocery-list', ''); return false" 
+                            href="javascript:void(0);">View Repo, explanations added throughout App.js.</a>
+						</div>
+					</div>
+				</div>				
+                <div>
+					<div class="post">
+						<img class="thumbnail" src="files/etch.png">
+						<div class="post-preview">
+							<h6 class="post-title">Etch-a-Sketch</h6>
+							<p class="post-intro">A drawing board, made in conjunction with the Odin Project.</p>
+							<a onclick="window.open ('https://aisha-sk.github.io/etch-a-sketch/', ''); return false" 
+                            href="javascript:void(0);">View website here.</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="files/amazon.png">
+						<div class="post-preview">
+							<h6 class="post-title">Amazon Frontend Clone</h6>
+							<p class="post-intro">Still in the works. Includes the homepage, orders, and checkout section.</p>
+							<a onclick="window.open ('https://aisha-sk.github.io/amazon-clone1/index.html', ''); return false" 
+                            href="javascript:void(0);">Check it out here.</a>
+						</div>
+					</div>
+				</div>				
 				<div>
 					<div class="post">
 						<img class="thumbnail" src="files/rock.png">
@@ -99,19 +134,7 @@
 							<h6 class="post-title">Drum Kit</h6>
 							<p class="post-intro">I made this to practice my Javascript DOM skills. Press the keys on your keyboard's second row to try :] </p>
 							<a onclick="window.open ('https://aisha-sk.github.io/drumKit/', ''); return false" 
-                            href="javascript:void(0);">Test it out here, not mobile-friendly.</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="files/grocery.png">
-						<div class="post-preview">
-							<h6 class="post-title">React Grocery List App</h6>
-							<p class="post-intro">A react-based App where you can use CRUD operations to manage your items!</p>
-							<a onclick="window.open ('https://github.com/aisha-sk/grocery-list', ''); return false" 
-                            href="javascript:void(0);">View Repo, explanations added throughout App.js.</a>
+                            href="javascript:void(0);">Test it out here, external keyboard required.</a>
 						</div>
 					</div>
 				</div>
@@ -137,17 +160,7 @@
 						</div>
 					</div>
 				</div>
-                <div>
-					<div class="post">
-						<img class="thumbnail" src="files/land.png">
-						<div class="post-preview">
-							<h6 class="post-title">Landing page</h6>
-							<p class="post-intro">This is a dummy landing page which I made in conjunction with The Odin Project. It was my first website ever & in the aspect of being responsive as well. Do checkout the spotify at the end!</p>
-							<a onclick="window.open ('https://aisha-sk.github.io/landingpage/', ''); return false" 
-                            href="javascript:void(0);">View website here.</a>
-						</div>
-					</div>
-				</div>
+
 
 			</div>
 		</div>
@@ -160,24 +173,24 @@
 				<div class="about-me">
 					<h4>More about me</h4>
 
-					<p>I'm currently doing The Odin Project. All my projects with source code can be viewed on my github profile.</p>
+					<p>All my projects with source code can be viewed on my github profile.</p>
 
-					<p>Seeking internships for Summer 2024!</p>
+					<p>Seeking internships for Summer 2024.</p>
 
 
 					<hr>
 
 					<h4>RESUME & EXPERTISE</h4>
 
-					<p> Currently on a path to learn Full Stack Development with Node.js 
-                        <a target="_blank" href="files/resume-copy.pdf">Download Resume</a>
+					<p> Currently on a path to learn Full Stack Development.
                     </p>
+					<a target="_blank" href="files/">Resume to be updated.</a>
 
 					<div id="skills">
 						<ul>
 							<li>Python</li>
 							<li>JavaScript</li>
-                            <li>C++</li>
+                            <li>React JS</li>
 
 						</ul>
 
@@ -194,8 +207,8 @@
 				
 				<div class="social-links">
                     
-					<img id="social_img" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
-                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
+					<img id="social_img1" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+                    <img id="social_img2" width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/>
 					<h3>Find me on LinkedIn</h3>
                     <a target="_blank" href="https://www.linkedin.com/in/aishasuhailkhan/">Click to view linkedin profile</a>
 					<br>
@@ -214,7 +227,7 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-            <form action="https://formsubmit.co/aishasuhail2005@gmail.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/aishasuhail2005@gmail.com" method="POST">
                 <a name="contact"></a>
 
                 <label>Name</label>
@@ -234,6 +247,7 @@
 
 		</div>
 	</section> 
+
 
 	<script type="text/javascript" src="script.js"></script>
 </body>
