@@ -1,19 +1,19 @@
 :root{
-	--mainColor:#46344E;
-	--secondaryColor:#382a3f;
+	--mainColor:#15202B;
+	--secondaryColor:#192734;
 
-	--borderColor:#1d1520;
+	--borderColor:#164D56;
 
 	--mainText:#fff;
 	--secondaryText:#eeeeee;
 
 	--themeDotBorder:#FFF;
 
-	--previewBg:rgb(29, 21, 32, 0.8);
-	--previewShadow:#2b202f;
+	--previewBg:rgb(25, 39, 52, 0.8);
+	--previewShadow:#111921;
 
 
-	--buttonColor:#8534a3;
+	--buttonColor:#17a2b8;
 
 
 }
@@ -538,7 +538,7 @@ nav {
 	font-size: 15px;
 	font-weight: bold;
 	color: #fff;
-	background-color: #a41380; /* Green background */
+	background-color: #a41380; 
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -569,4 +569,72 @@ nav {
 .button-wrapper {
 	display: inline-block;
 	margin-right: 20px;
+}
+
+
+.job-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.work-experience {
+	text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the job boxes */
+    max-width: 1200px; /* Set a max-width to constrain the content */
+}
+
+.job {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+	padding:30px;
+    flex: 1 1 calc(100% - 40px); /* Default to 1 job per row */
+}
+
+.job:hover {
+    transform: scale(1.05);
+    background-color: #ffeeff;
+}
+
+.job h3 {
+    color: #8534a3;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.job ul li {
+    margin-bottom: 10px;
+    color: #4b5156;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.job p {
+    margin-bottom: 5px;
+    color: #4b5156;
+    font-size: 24px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .job {
+        flex: 1 1 calc(50% - 40px); /* 2 jobs per row */
+    }
+}
+
+@media (min-width: 1200px) {
+    .job {
+        flex: 1 1 calc(33.333% - 40px); /* 3 jobs per row */
+    }
 }
