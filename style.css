@@ -90,7 +90,8 @@ h6 { font-size: 16px;}
 	text-align: center;
 	align-content: center;
 	min-height: 10em;
-	margin-top:-35px;
+	margin-top:0px;
+	margin-bottom:5px;
 
 }
 
@@ -582,18 +583,18 @@ nav {
 	text-align: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
     justify-content: center; /* Center the job boxes */
-    max-width: 1200px; /* Set a max-width to constrain the content */
+    max-width: 2000px; /* Set a max-width to constrain the content */
 }
 
 .job {
     background-color: #f0f0f0;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 250px;
 	padding:30px;
     flex: 1 1 calc(100% - 40px); /* Default to 1 job per row */
 }
@@ -601,16 +602,20 @@ nav {
 .job:hover {
     transform: scale(1.05);
     background-color: #ffeeff;
+
 }
 
 .job h3 {
     color: #8534a3;
     margin-bottom: 10px;
+	height:90px;
+	align-content: center;
 }
 
 .job ul {
     margin-top: 20px;
     padding-left: 20px;
+	margin-left:-20px;
 }
 
 .job ul li {
@@ -624,6 +629,8 @@ nav {
     margin-bottom: 5px;
     color: #4b5156;
     font-size: 24px;
+	align-content: center;
+	height:50px;
 }
 
 /* Media query for larger screens */
