@@ -599,11 +599,11 @@ nav {
     flex: 1 1 calc(100% - 40px); /* Default to 1 job per row */
 }
 
-.job:hover {
+/* .job:hover {
     transform: scale(1.05);
     background-color: #ffeeff;
 
-}
+} */
 
 .job h3 {
     color: #8534a3;
@@ -645,3 +645,4 @@ nav {
         flex: 1 1 calc(33.333% - 40px); /* 3 jobs per row */
     }
 }
+
